@@ -36,3 +36,10 @@ article_csv = df.to_csv(index=False)
 
 with open(".\projects.csv", mode="a") as file:
     file.write(article_csv)
+
+# try: 
+#     stars = project.find_element(By.CSS_SELECTOR, "a[href*='/stargazers']").strip()
+#     print(f"Stars: {stars}") 
+#     project_df["Stars"] = stars # store in the Pandas dataframe
+# except (TimeoutException, StaleElementReferenceException):
+#     print("Error occurred while fetching stars.")   
