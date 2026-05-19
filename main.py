@@ -34,10 +34,10 @@ for article in articles:
 
 df = pd.DataFrame({
     "Name": article_names,
-    "Link": article_links,
-    "Stars": article_stars
+    "Stars": article_stars,
+    "Link": article_links
 })
 article_csv = df.to_csv(index=False)
 
-with open("./projects.csv", mode="a") as file:
+with open("./projects.csv", mode="w") as file:
     file.write(article_csv)
