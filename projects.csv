@@ -1,21 +1,21 @@
-Name,Stars,Link
-apache / spark,43307,https://github.com/apache/spark
+name,stars,link
+apache / spark,43308,https://github.com/apache/spark
 apache / hadoop,15548,https://github.com/apache/hadoop
 jbhuang0604 / awesome-computer-vision,23274,https://github.com/jbhuang0604/awesome-computer-vision
 GSA / data,2278,https://github.com/GSA/data
-GoogleTrends / data,4826,https://github.com/GoogleTrends/data
+GoogleTrends / data,4827,https://github.com/GoogleTrends/data
 nationalparkservice / data,1257,https://github.com/nationalparkservice/data
-fivethirtyeight / data,17375,https://github.com/fivethirtyeight/data
-beamandrew / medical-data,5995,https://github.com/beamandrew/medical-data
+fivethirtyeight / data,17377,https://github.com/fivethirtyeight/data
+beamandrew / medical-data,5994,https://github.com/beamandrew/medical-data
 src-d / awesome-machine-learning-on-source-code,6578,https://github.com/src-d/awesome-machine-learning-on-source-code
 igrigorik / decisiontree,1481,https://github.com/igrigorik/decisiontree
-keon / awesome-nlp,18592,https://github.com/keon/awesome-nlp
+keon / awesome-nlp,18617,https://github.com/keon/awesome-nlp
 openai / gym,37208,https://github.com/openai/gym
 aikorea / awesome-rl,9760,https://github.com/aikorea/awesome-rl
 umutisik / Eigentechno,785,https://github.com/umutisik/Eigentechno
 jpmckinney / tf-idf-similarity,779,https://github.com/jpmckinney/tf-idf-similarity
 scikit-learn-contrib / lightning,1776,https://github.com/scikit-learn-contrib/lightning
 gwding / draw_convnet,2852,https://github.com/gwding/draw_convnet
-scikit-learn / scikit-learn,66120,https://github.com/scikit-learn/scikit-learn
-tensorflow / tensorflow,195180,https://github.com/tensorflow/tensorflow
-activeloopai / deeplake,9128,https://github.com/activeloopai/deeplake
+scikit-learn / scikit-learn,66125,https://github.com/scikit-learn/scikit-learn
+tensorflow / tensorflow,195203,https://github.com/tensorflow/tensorflow
+activeloopai / deeplake,9129,https://github.com/activeloopai/deeplake

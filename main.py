@@ -4,6 +4,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC 
 from selenium.common.exceptions import TimeoutException, StaleElementReferenceException
 import pandas as pd
+import streamlit as st
 
 #Configuring Chrome options.
 chrome_options = webdriver.ChromeOptions()
@@ -24,6 +25,7 @@ articles = driver1.find_elements(By.TAG_NAME, "article")
 article_names = []
 article_links = []
 article_stars = []
+article_description = []
 
 #This for loop section iterates through each article element found on the page, 
 # extracting the link and name of each article and appending them to the respective lists.
@@ -31,13 +33,17 @@ for article in articles:
     article_links.append(article.find_element(By.CSS_SELECTOR, "h1 > a").get_attribute("href"))
     article_names.append(article.find_element(By.CSS_SELECTOR, "h1 > a").text)
     article_stars.append(article.find_element(By.CSS_SELECTOR, "a[href*='/stargazers']").text.strip())
+    article_description.append(article.find_element(By.CSS_SELECTOR, "div[class^=color-]")).text
 
+    
 df = pd.DataFrame({
-    "Name": article_names,
-    "Stars": article_stars,
-    "Link": article_links
+    "name": article_names,
+    "stars": article_stars,
+    "link": article_links,
+    "description": article_description
 })
 article_csv = df.to_csv(index=False)
 
 with open("./projects.csv", mode="w") as file:
     file.write(article_csv)
+
